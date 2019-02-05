@@ -1,0 +1,30 @@
+{
+  "name": "@playframe/oversync",
+  "version": "1.0.0",
+  "description": "Frame Rendering Engine",
+  "main": "index.js",
+  "scripts": {
+    "build": "coffee -c -b -p README.litcoffee > index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/playframe/oversync.git"
+  },
+  "keywords": [
+    "fp",
+    "pf",
+    "playframe",
+    "frame",
+    "framesync",
+    "fps"
+  ],
+  "author": "Kiryl Yermakou <rma4ok@gmail.com>",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/playframe/oversync/issues"
+  },
+  "homepage": "https://github.com/playframe/oversync#readme",
+  "devDependencies": {
+    "coffeescript": "^2.3.2"
+  }
+}
