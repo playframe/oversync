@@ -22,7 +22,7 @@ to be executed in specific time and order
 ```js
 sync.next(fn) // events handling and dom read
 sync.catch(fn) // error handling
-sync.then(fn) // major data work done here
+sync.then(fn) // data work is done here
 sync.finally(fn) // finilizing data
 sync.render(fn) // dom manipulation
 
@@ -44,7 +44,7 @@ to be done onlly after frame_1 is rendered
 1ms Request frame_0 and setTimeout(work_for_frame_1)
 2ms frame_0 is rendered by browser
 3ms Request frame_1
-4ms read dom, do work, write dom
+4ms work_for_frame_1: read dom, do work, write dom
 ... idle
 8ms Click: sync.next(click_handler) for frame_2
 ... idle
@@ -53,7 +53,7 @@ to be done onlly after frame_1 is rendered
 15ms Animation callback: setTimeout(work_for_frame_2)
 16ms frame_1 is rendered
 17ms Request frame_2
-18ms read dom, do work, write dom for frame_2
+18ms work_for_frame_2: read dom, do work, write dom
 ...
 ```
 
