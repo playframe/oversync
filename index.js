@@ -23,7 +23,7 @@
 // sync.next(fn) // events handling and dom read
 // sync.catch(fn) // error handling
 // sync.then(fn) // data work is done here
-// sync.finally(fn) // finilizing data
+// sync.finally(fn) // finalizing data
 // sync.render(fn) // dom manipulation
 
 // // Actual requestAnimationFrame callback
